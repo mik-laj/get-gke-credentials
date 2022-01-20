@@ -173,6 +173,7 @@ export class ClusterClient {
       url: url,
       headers: {
         'User-Agent': userAgent,
+        'X-Goog-User-Project': this.#projectID,
       },
     })) as ClusterResponse;
     return resp;
